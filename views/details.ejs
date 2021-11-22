@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
+  <title></title>
+</head>
+<body>
+    <h1 style="text-align: center;">PizzaDetails</h1>
+    
+    <div class="form2">
+
+    <form action="/delete" method="POST">
+    <h2><%=flag2.name%></h2>
+    <h3><%=flag2.type%></h3>
+    <h4><%=flag2.quantity%></h4>
+    <h5><%=flag2.flavour%></h5>
+    <input type="checkbox" name="checkbox" value="<%=flag2._id%>" onchange="this.form.submit()">Complete Order
+</form>
+</div>
+</body>
+</html>

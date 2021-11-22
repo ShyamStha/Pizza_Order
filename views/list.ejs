@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <h1 style="text-align: center;">List Of Pizzas</h1>
+    <div class="content">
+        <% for(var i=0;i<flag1.length;i++)
+        {%>
+            <a href="/pizzas/<%=flag1[i]._id%>" style="text-decoration: none;">
+            <h2 style="text-align: center;">Name:<%=flag1[i]['name']%></h2>
+            <h3 style="text-align: center;">Type:<%=flag1[i]['type']%></h3>
+            <h4 style="text-align: center;"> Quantity:<%=flag1[i]['quantity']%></h4>
+            <h5 style="text-align: center;">Flavour:<%=flag1[i]['flavour']%></h5>
+            </a>
+        <%}%>
+        <h2 style="text-align: center;"><a href="/create">Add Pizza</a></h2>
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

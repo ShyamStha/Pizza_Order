@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+<body>
+   
+    <%- include('partials/nav.ejs') %>
+    <h1 style="text-align: center;">Add A Form Here</h1>
+    <div class="content">
+        <form action="/pizzas" method="POST">
+            <input type="text" name="name" placeholder="nameofpizza">
+            <input type="radio" name="quantity" value="half">Half
+            <input type="radio" name="quantity" value="full">Full
+            <br>
+            <br>
+            <fieldset>
+                <label for="">Choose your flavour</label>
+                <input type="radio" name="flavour" value="salty">Salty
+                <input type="radio" name="flavour" value="spicy">Spicy
+                <input type="radio" name="flavour" value="olivemushed">OliveMushed
+                <input type="radio" name="flavour" value="mushroom">Mushroom
+            </fieldset>
+            <br>
+            <br>
+            <input type="submit" name="" id="">
+        </form>
+        
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
